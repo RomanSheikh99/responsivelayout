@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: aquamarine;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+ul li{
+    list-style: none;
+}
+ul li a,.icon-bar i{
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    padding: 5px 10px;
+}
+ul li a:hover ,.icon-bar i:hover{
+    background-color: black;
+    color: aquamarine;
+    border-radius: 5%;
+}
+.nav-bar{
+    width: 65%;
+}
+.icon-bar{
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+}
+.icon-bar i{
+    margin: 0 10px;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 0;
+}
+form h2{
+    font-size: 2.2em;
+    text-transform: capitalize;
+}
+input,button{
+    border: 1px solid darkgray;
+    outline: none;
+    display: block;
+    font-size: 1.4em;
+    padding: 5px 10px;
+    margin-top: 15px;
+    border-radius: 5%;
+}
+button{
+    border: none;
+    padding: 10px 60px;
+    font-size: 2em;
+    color: #000;
+    text-transform: uppercase;
+    background-color: aquamarine;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin: 20px auto;
+}
+
+.celender{
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding-bottom: 40px;
+}
+
+.celender-title,.month-title{
+    background-color: darkgrey;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.6em;
+    text-transform: capitalize;
+}
+
+.celender-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.month{
+    margin-top: 20px;
+}
+.month-title{
+
+}
+.main-calender{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+}
+.day,.date{
+    background-color: darkgrey;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    transition: .4s;
+}
+.day:hover,.date:hover{
+    transform: scale(0.9);
+    cursor: grab;
+}
+.day{
+    color: aquamarine;
+}
+.other-month{
+    background-color: rgba(153, 153, 153, 0.315);
+    color: rgba(0, 0, 0, 0.521);
+}
+
+.photo{
+    padding: 20px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.photo-box{
+    width: 22%;
+    border-radius: 5px;
+    position: relative;
+    transition: .8s;
+    margin-bottom: 20px;
+}
+.photo-box:hover{
+    box-shadow: 1px 1px 10px 0px #666;
+}
+.photo-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.photo-img img{
+    border-radius: 5px;
+    width: 100%;
+    height: 300px;
+    transition: transform 1s linear;
+}
+.photo-dettal{
+    display: block;
+    transform: scaleY(0);
+    transform-origin: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform .4s linear;
+    background-color: rgb(127 73 73 / 57%);
+    height: 300px;
+    overflow: hidden;
+}
+.photo-box:hover .photo-dettal{
+    display: block;
+    transform: scaleY(1);
+}
+.photo-dettal h3 {
+    text-align: center;
+    background: aquamarine;
+    padding: 5px;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.photo-dettal p {
+    padding: 0 15px;
+    text-align: justify;
+    line-height: 2;
+    font-size: 1.4em;
+    color: aquamarine;
+}
+
+.photo-box:hover .photo-img img{
+    transform: scale(1.1);
+}
+.property{
+    background-color: aquamarine;
+}
+.text{
+    padding: 80px;
+    text-align: center;
+}
+.text p{
+    font-size: 2em;
+    line-height: 1.5;
+}
+.text p span{
+    font-weight: 700;
+}
+.text p a{
+    text-transform: capitalize;
+    line-height: 2.5;
+    text-decoration: none;
+    font-size: 1.4em;
+    background: orchid;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: aquamarine;
+    text-align: center;
+}
+
+footer h2{
+    font-size: 2em;
+    line-height: 3;
+}
+footer p{
+    font-size: 1.5em;
+}
