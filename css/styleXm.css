@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (min-width: 481px) and (max-width: 688px) {
 
     #home{display: block;}
     #login{display: block;}
@@ -14,74 +14,41 @@
     /* common css media stylesheet end*/
 
     /* header section */
-    .icon-bar i , .menu i{
-        font-size: 1.6em;
-        padding: 5px;
-        margin-left: 10px;
+    #home{
+        padding: 0 10px;
     }
-    .nav-bar ul.nav-items{
-        display: none;
-        transform: scaleY(0);
-        transform-origin: top;
-        transition: all 2s;
+    ul li a,.icon-bar i{
+        font-size: .9em;
+        padding: 5px;
+    }
+    .icon-bar i{
+        margin: 0;
+        margin-left: 5px;
     }
     .nav-bar{
-        width: 50%;
-    }
-    ul li{
-        margin-top: 10px;
-    }
-    ul li a{
-        font-size: 1em;
-        padding: 5px;
-        
-    }
-    ul li a:hover{
-        background-color: black;
-        color: aquamarine;
+        width: 75%;
     }
     .icon-bar{
-        width: 50%;
-    }
-    .menu{display: block;}
-    .fa-times{
-        display: none;
-    }
-    .menu:hover .fa-bars{
-        display: none;
-    }
-    .menu:hover .fa-times{
-        display: block;
-    }
-    .nav-bar:hover ul.nav-items{
-        display: flex;
-        flex-direction: column;
-        transform: scaleY(1);
-        transform-origin: top;
+        width: 25%;
     }
     /* header section end */
 
     /* login form section start */
     .form-container{
-        padding: 20px 0;
+        padding: 40px 0;
     }
     form h2{
-        font-size: 1.6em;
+        font-size: 2em;
     }
     button{
         margin-bottom: 0px;
-        border-radius: 10px;
-        font-size: 1em;
-    }
-    input{
-        font-size: 1.2em;
     }
     
     /* login setion end */
 
     /* celender section start */
     .celender-title,.month-title{
-        font-size: 1em;
+        font-size: 1.4em;
     }
     .celender-container{
         display: flex;
@@ -90,60 +57,54 @@
         align-items: center;
     }
     .main-calender{
-        grid-gap: 4px;
-    }
-    .celender-container{
-        padding: 0 10px;
+        grid-gap: 10px;
     }
     .day,.date{
-        padding: 5px;
-        font-size: .7em;
+        padding: 10px;
+        font-size: 1em;
     }
     /* celender section end */
 
     /* photo section start */
     .photo{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
     }
     .photo-box{
         width: 100%;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
     }
     .photo-box:nth-child(4),.photo-box:nth-child(5){
         display: none;
     }
     .photo-img img, .photo-dettal{
-        height: 120px;
+        height: 160px;
     }
     .photo-box:hover .photo-dettal{
         display: block;
         transform: scaleY(1);
-        overflow: hidden;
     }
     .photo-dettal h3 {
-        font-size: .6em;
-        margin-bottom: 8px;
+        font-size: 1em;
+        margin-bottom: 20px;
     }
     .photo-dettal p {
         text-align: left;
-        line-height: 1.2;
-        font-size: .8em;
-        padding: 0 5px;
+        line-height: 1.4;
+        font-size: 1em;
     }
     /* photo section end */
    
     /* property section start */
     .text{
-        padding: 5px;
+        padding: 16px;
     }
     .text p{
-        font-size: .7em;
-        
+        font-size: 1em;
     }
     .text p a{
-        font-size: .8em;
+        font-size: 1em;
     }
     /* property section end */
 
