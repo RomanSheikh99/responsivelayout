@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Layout</title>
     <script src="https://kit.fontawesome.com/41415a53eb.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleLg.css">
+    <link rel="stylesheet" href="css/styleMD.css">
+    <link rel="stylesheet" href="css/styleSM.css">
 </head>
 <body>
 
@@ -14,14 +17,19 @@
         <div class="container">
             <nav>
                 <div class="nav-bar">
-                    <ul>
+                    <div class="menu">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <ul class="nav-items">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#login-form">Login</a></li>
+                        <li><a href="#login">Login</a></li>
                         <li><a href="#celender">Celender</a></li>
                         <li><a href="#photo">Photo</a></li>
                         <li><a href="#property">Property</a></li>
                         <li><a href="#summery">Summery</a></li>
                     </ul>
+                    
                 </div>
                 <div class="icon-bar">
                     <i class="fas fa-user-alt"></i>
@@ -32,7 +40,7 @@
         </div>
     </header>
 
-    <section id="#login">
+    <section id="login">
         <div class="container">
             <div class="form-container">
                 <form action="">

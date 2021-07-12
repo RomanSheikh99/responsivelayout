@@ -1,16 +1,25 @@
+/* font family link */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* common stylesheet start */
 *{
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-header{
-    background-color: aquamarine;
-}
+
 .container{
     width: 90%;
     margin: 0 auto;
     padding: 20px 0;
+}
+/* common stylesheet end */
+
+
+/* header section start */
+header{
+    background-color: aquamarine;
 }
 nav{
     display: flex;
@@ -19,6 +28,9 @@ nav{
 ul{
     display: flex;
     justify-content: space-between;
+}
+.menu{
+    display: none;
 }
 ul li{
     list-style: none;
@@ -45,35 +57,10 @@ ul li a:hover ,.icon-bar i:hover{
 .icon-bar i{
     margin: 0 10px;
 }
+/* header section end */
 
-@media (max-width: 1200px) {
-    ul li a,.icon-bar i{
-        font-size: 1.5em;
-    }
-}
-@media (max-width: 992px) {
-    header{
-        width: 100vw;
-    }
-    ul li a,.icon-bar i{
-        font-size: 1em;
-        padding: 5px;
-    }
-    .icon-bar i{
-        margin: 0 5px;
-    }
-    .nav-bar{
-        width: 60%;
-    }
-    .icon-bar{
-        width: 40%;
-    }
-    .container{
-        width: 100%;
-    }
-    
-}
 
+/* form section start */
 
 .form-container{
     display: flex;
@@ -106,13 +93,15 @@ button{
     letter-spacing: 3px;
     margin: 20px auto;
 }
+/* form section end */
 
+
+/* celender section start */
 .celender{
     background-color: aquamarine;
     border-radius: 5px;
     padding-bottom: 40px;
 }
-
 .celender-title,.month-title{
     background-color: darkgrey;
     text-align: center;
@@ -120,19 +109,14 @@ button{
     font-size: 1.6em;
     text-transform: capitalize;
 }
-
 .celender-container{
     margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-
 .month{
     margin-top: 20px;
-}
-.month-title{
-
 }
 .main-calender{
     margin-top: 20px;
@@ -159,7 +143,11 @@ button{
     background-color: rgba(153, 153, 153, 0.315);
     color: rgba(0, 0, 0, 0.521);
 }
+/* celender section end */
 
+
+
+/* photo section start */
 .photo{
     padding: 20px;
     border-radius: 5px;
@@ -168,7 +156,6 @@ button{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .photo-box{
     width: 22%;
     border-radius: 5px;
@@ -214,7 +201,6 @@ button{
     font-size: 2em;
     margin-bottom: 30px;
 }
-
 .photo-dettal p {
     padding: 0 15px;
     text-align: justify;
@@ -222,10 +208,13 @@ button{
     font-size: 1.4em;
     color: aquamarine;
 }
-
 .photo-box:hover .photo-img img{
     transform: scale(1.1);
 }
+/* photo section end */
+
+/* property section start */
+
 .property{
     background-color: aquamarine;
 }
@@ -249,7 +238,10 @@ button{
     padding: 5px 10px;
     border-radius: 5px;
 }
+/* property section end */
 
+
+/* footer section start */
 footer{
     background-color: aquamarine;
     text-align: center;
@@ -262,3 +254,4 @@ footer h2{
 footer p{
     font-size: 1.5em;
 }
+/* footer section end */
